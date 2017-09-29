@@ -6,7 +6,7 @@
  * URL: http://blacktie.co
  */
 
-body {
+/*body {
   background-color: #f2f2f2;
     font-family: "Lato";
     src: url(../);
@@ -16,28 +16,28 @@ body {
 
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
-}
+}*/
 
 /* Titles */
-h1, h2, h3, h4, h5, h6 {
+/*h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway";
     font-weight: 300;
     color: #333;
-}
+}*/
 
 
 /* Paragraph & Typographic */
-p {
+/*p {
     line-height: 28px;
     margin-bottom: 25px;
 }
 
 .centered {
     text-align: center;
-}
+}*/
 
 /* Links */
-a {
+/*a {
     color: #f85c37;
     word-wrap: break-word;
 
@@ -71,14 +71,14 @@ a:after {
     border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
-}
+}*/
 
 
 /*---------------------------------------------------
 	3.1 Topbar
 ---------------------------------------------------*/
 
-#section-topbar {
+/*#section-topbar {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -96,26 +96,26 @@ a:after {
 	background: #111;
 	line-height: 0;
 	text-align: center;
-}
+}*/
 
 /*
 	Top Bar
 
 	By default, top navigation bar uses "fixed" position
 */
-#section-topbar ul#nav {
+/*#section-topbar ul#nav {
 	display: inline-block;
 	position: relative;
 	margin: 0;
 	padding: 0;
 
-	border-right: 1px solid #222;
+	border-right: 1px solid #222;*/
 
 	/* For IE, the outcast */
-	zoom:1;
+	/*zoom:1;
 	*display: inline;
-}
-
+}*/
+/*
 #section-topbar ul#nav > li {
 	display: block;
     float: left;
@@ -147,13 +147,13 @@ a:after {
 		}
 #section-topbar i {
 	font-size: 25px;
-}
+}*/
 /*---------------------------------------------------
 	SECTION WRAPS
 ---------------------------------------------------*/
 
 /* Header Wrap */
-#headerwrap {
+/*#headerwrap {
 	background: url(../img/header-bg.png) no-repeat center top;
 	margin-top: 60px;
 	padding-top:140px;
@@ -182,11 +182,11 @@ a:after {
 #headerwrap h3 {
 	font-size: 20px;
 	color: white;
-}
+}*/
 
 /* Intnro Wrap */
 
-#intro {
+/*#intro {
 	background: #2c3e50;
 	padding-top: 60px;
 	padding-bottom: 60px;
@@ -202,21 +202,22 @@ a:after {
 	font-size: 20px;
 	padding-right: 8px;
 	vertical-align: middle;
-}
+}*/
 
 
 #skillswrap {
-	background: #2c3e50;
-	padding-top: 60px;
-	padding-bottom: 60px;
+	background: #000000;
+	padding-top: 55px;
+	padding-bottom: 0px;
 	color: white;
+  border-radius: 10px;
 }
 
 #skillswrap h5, p {
 	color: white;
 }
 
-#footwrap {
+/*#footwrap {
 	background: #2f2f2f;
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -238,11 +239,11 @@ a:after {
 #footwrap i {
 	padding-right: 8px;
 	color: #1abc9c;
-}
+}*/
 
 /* Copyright Wrap */
 
-#c {
+/*#c {
 	background: #222222;
 	padding-top: 15px;
 	text-align: right;
@@ -250,13 +251,13 @@ a:after {
 
 #c p {
 	color: white
-}
+}*/
 
 
 
 /* Global Values */
 
-.desc {
+/*.desc {
 	padding-top: 50px;
 }
 
@@ -282,4 +283,4 @@ a:after {
 
 sm {
 	font-size: 12px;
-}
+}*/
