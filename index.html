@@ -11,19 +11,22 @@
     <title>Avneesh Mehta</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this template -->
-    <link href="css/grayscale.min.css" rel="stylesheet">
+    <link href="css/grayscale.css" rel="stylesheet">
 
-    <!-- JS and CSS from resume theme -->
+    <!-- JS and CSS from other theme -->
     <script src="js/Chart.js"></script>
-    <link href="assets/css/main.css" rel="stylesheet">
+    <!-- <link href="assets/css/main.css" rel="stylesheet"> -->
+
+    <!-- Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
   </head>
 
@@ -32,21 +35,24 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Avneesh Mehta</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand js-scroll-trigger animated fadeIn" href="#page-top">Avneesh Mehta</a>
+        <button class="navbar-toggler navbar-toggler-right animated fadeIn" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link js-scroll-trigger animated fadeIn" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#resume">Resume</a>
+              <a class="nav-link js-scroll-trigger animated fadeIn" href="#resume">Resume</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              <a class="nav-link js-scroll-trigger animated fadeIn" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger animated fadeIn" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -59,10 +65,10 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-8 mx-auto">
-              <h1 class="brand-heading">Avneesh Mehta</h1>
-              <p class="intro-text">Creator. Developer.</p>
-              <a href="#about" class="btn btn-circle js-scroll-trigger">
-                <i class="fa fa-angle-double-down animated"></i>
+              <h1 class="brand-heading animated fadeIn">Avneesh Mehta</h1>
+              <p class="intro-text animated fadeIn">Creator. Developer.</p>
+              <a href="#about" class="btn btn-circle js-scroll-trigger animated fadeIn">
+                <i class="fa fa-angle-double-down animated fadeIn"></i>
               </a>
             </div>
           </div>
@@ -71,12 +77,12 @@
     </header>
 
     <!-- About Section -->
-    <section id="about" class="content-section text-center">
+    <section id="about" class="profile-section content-section text-center">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto">
+          <div class="wrap col-lg-8 mx-auto">
             <h2>About Me</h2>
-            <p>I'm a student at <a href = "">UC Berkeley</a> studying <a href = "">Computer Science</a>.</p>
+            <p>I'm a student at <a href="">UC Berkeley</a> studying <a href = "">Computer Science</a>.</p>
             <p>My major fields of interest include <a href = "">Web Dev</a>, <a href = "">Blockchain</a> technology, <br/>and <a href = "">Machine Learning</a>.</p>
           </div>
         </div>
@@ -85,28 +91,18 @@
 
     <!-- Download Section -->
     <section id="resume" class="download-section content-section text-center">
-      <!-- <h2>Resume</h2> -->
       <div class="container">
-          <div id="skillswrap">
-            <h5>SKILLS</h5>
+          <div class="wrap">
+            <h4>SKILLS</h4>
         		<div class="container">
         			<div class="row">
         					<div class="col-lg-4 mx-auto">
         						<canvas id="python" height="130" width="130"></canvas>
         						<p>Python</p>
         						<br>
-        						<script>
-        							var doughnutData = [
-        									{
-        										value: 70,
-        										color:"#42DCA3"
-        									},
-        									{
-        										value : 30,
-        										color : "#ecf0f1"
-        									}
-        								];
-        								var myDoughnut = new Chart(document.getElementById("python").getContext("2d")).Doughnut(doughnutData);
+                    <script>
+                      var doughnutData = [{value: 70, color:"#42DCA3"},{value : 30,color : "#ecf0f1"}];
+                      var myDoughnut = new Chart(document.getElementById("python").getContext("2d")).Doughnut(doughnutData);
         						</script>
         					</div>
         					<div class="col-lg-4 mx-auto">
@@ -114,17 +110,8 @@
         						<p>Javascript</p>
         						<br>
         						<script>
-        							var doughnutData = [
-        									{
-        										value: 60,
-        										color:"#42DCA3"
-        									},
-        									{
-        										value : 40,
-        										color : "#ecf0f1"
-        									}
-        								];
-        								var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
+                    var doughnutData = [{value: 60,color:"#42DCA3"},{value : 40,color : "#ecf0f1"}];
+                    var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
         						</script>
         					</div>
         					<div class="col-lg-4 mx-auto">
@@ -132,17 +119,8 @@
         						<p>Ruby on Rails</p>
         						<br>
         						<script>
-        							var doughnutData = [
-        									{
-        										value: 30,
-        										color:"#42DCA3"
-        									},
-        									{
-        										value : 70,
-        										color : "#ecf0f1"
-        									}
-        								];
-        								var myDoughnut = new Chart(document.getElementById("rails").getContext("2d")).Doughnut(doughnutData);
+                    var doughnutData = [{value: 60,color:"#42DCA3"},{value : 40,color : "#ecf0f1"}];
+        						var myDoughnut = new Chart(document.getElementById("rails").getContext("2d")).Doughnut(doughnutData);
         						</script>
         					</div>
 
@@ -151,35 +129,17 @@
         						<p>HTML/CSS</p>
         						<br>
         						<script>
-        							var doughnutData = [
-        									{
-        										value: 70,
-        										color:"#42DCA3"
-        									},
-        									{
-        										value : 30,
-        										color : "#ecf0f1"
-        									}
-        								];
-        								var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
+        						var doughnutData = [{value: 70,color:"#42DCA3"},{value : 30,color : "#ecf0f1"}];
+        						var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
         						</script>
         					</div>
         					<div class="col-lg-4 mx-auto">
         						<canvas id="git" height="130" width="130"></canvas>
-        						<p>Github</p>
+        						<p>Expo iOS/Android Dev</p>
         						<br>
         						<script>
-        							var doughnutData = [
-        									{
-        										value: 70,
-        										color:"#42DCA3"
-        									},
-        									{
-        										value : 30,
-        										color : "#ecf0f1"
-        									}
-        								];
-        								var myDoughnut = new Chart(document.getElementById("git").getContext("2d")).Doughnut(doughnutData);
+        						var doughnutData = [{value: 70,color:"#42DCA3"},{value : 30,color : "#ecf0f1"}];
+        						var myDoughnut = new Chart(document.getElementById("git").getContext("2d")).Doughnut(doughnutData);
         						</script>
         					</div>
         					<div class="col-lg-4 mx-auto">
@@ -187,17 +147,8 @@
         						<p>Terminal/*nix</p>
         						<br>
         						<script>
-        							var doughnutData = [
-        									{
-        										value: 90,
-        										color:"#42DCA3"
-        									},
-        									{
-        										value : 10,
-        										color : "#ecf0f1"
-        									}
-        								];
-        								var myDoughnut = new Chart(document.getElementById("nix").getContext("2d")).Doughnut(doughnutData);
+        						var doughnutData = [{value: 90,color:"#42DCA3"},{value : 10,color : "#ecf0f1"}];
+        						var myDoughnut = new Chart(document.getElementById("nix").getContext("2d")).Doughnut(doughnutData);
         						</script>
         					</div>
 
@@ -211,6 +162,32 @@
           <a href="https://docs.google.com/document/d/1Iex2hbvHi0y09V48SQS-lnPoJd2pYSUeXQh5FOy49Fw/edit?usp=sharing" class="btn btn-default btn-lg">View Single Page Resume</a>
       </div>
     </section>
+
+
+    <!-- Projects -->
+    <section id="projects" class="projects-section content-section text-center">
+      <div class="container">
+        <div class="wrap">
+          <h4>Projects</h4>
+          <div class="row">
+            <div class="col-lg-6 mx-auto">
+              <h5>Cryptus</h5>
+              <p>A peer-to-peer marketplace for Bitcoin and Ethereum.</p>
+              <p>Built using Ruby on Rails 5 and Bootstrap.</p>
+              <a href="https://sleepy-plains-94118.herokuapp.com/" class="btn btn-default btn-lg">Demo</a>
+              <a href="https://github.com/avneesh1mehta/Cryptus" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> Repo</a>
+            </div>
+            <div class="col-lg-6 mx-auto">
+              <h5>BlockAddr</h5>
+              <p>An iOS app to retrieve info about one's Bitcoin address.</p>
+              <p>Built using Expo React-Native.</p>
+              <a href="https://github.com/avneesh1mehta/blockaddr" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> Repo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     <!-- Contact Section -->
     <section id="contact" class="content-section text-center">
@@ -240,7 +217,7 @@
               </li>
             </ul>
             <br/>
-            <p><t>Email  |  avneesh@berkeley.edu</t></p>
+            <p><t>Email  |  avneesh1mehta@berkeley.edu</t></p>
             <p><t>Phone  |  +1 (408) 223-5843</t></p>
           </div>
         </div>
@@ -255,12 +232,12 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper/popper.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for this template -->
     <script src="js/grayscale.min.js"></script>
