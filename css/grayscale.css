@@ -179,13 +179,15 @@ a {
   	background: #000000;
   	padding-top: 55px;
   	padding-bottom: 55px;
+    padding-left: 55px;
+    padding-right: 55px;
   	color: white;
     border-radius: 10px;
   }
 
-  .wrap h5, p {
+  /* .wrap h5, p {
   	color: white;
-  }
+  } */
 
 #map {
   width: 100%;

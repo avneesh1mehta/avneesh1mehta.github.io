@@ -77,18 +77,22 @@
         <div class="row">
           <div class="wrap col-lg-8 mx-auto">
             <h2>About Me</h2>
-            <p>I'm a student at <a href="">UC Berkeley</a> studying <a href = "">Computer Science</a>.</p>
-            <p>My major fields of interest include <a href = "">Web Dev</a>, <a href = "">Blockchain</a> technology, <br/>and <a href = "">Machine Learning</a>.</p>
+            <p>I'm a Freshman at <a href="">UC Berkeley</a> studying <a href="">Computer Science</a>.</p>
+            <p>My major fields of interest include <a href="">Machine Learning</a>, <a href="">Blockchain</a> technology, <br/>and <a href="">Web Development</a>.</p>
+            <p>My hobbies include making music and freestyle dancing.</p>
+            <p>My motto in life is create to live and live to create.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Download Section -->
+    <!-- Resume Section -->
     <section id="resume" class="resume-section content-section text-center">
       <div class="container">
           <div class="wrap">
-            <h4>SKILLS</h4>
+            <div class="text-center" style="padding-bottom: 60px;">
+              <a href="https://docs.google.com/document/d/1Iex2hbvHi0y09V48SQS-lnPoJd2pYSUeXQh5FOy49Fw/edit?usp=sharing" class="btn btn-default btn-lg">View Resume</a>
+            </div>
         		<div class="container">
         			<div class="row">
         					<div class="col-lg-4 mx-auto">
@@ -96,16 +100,16 @@
         						<p>Python</p>
         						<br>
                     <script>
-                      var doughnutData = [{value: 70, color:"#42DCA3"},{value : 30,color : "#ecf0f1"}];
+                      var doughnutData = [{value: 80, color:"#42DCA3"},{value : 20,color : "#ecf0f1"}];
                       var myDoughnut = new Chart(document.getElementById("python").getContext("2d")).Doughnut(doughnutData);
         						</script>
         					</div>
         					<div class="col-lg-4 mx-auto">
         						<canvas id="javascript" height="130" width="130"></canvas>
-        						<p>Javascript</p>
+        						<p>Javascript/HTML/CSS Bootstrap</p>
         						<br>
         						<script>
-                    var doughnutData = [{value: 60,color:"#42DCA3"},{value : 40,color : "#ecf0f1"}];
+                    var doughnutData = [{value: 70,color:"#42DCA3"},{value : 30,color : "#ecf0f1"}];
                     var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
         						</script>
         					</div>
@@ -120,23 +124,25 @@
         					</div>
 
         					<div class="col-lg-4 mx-auto">
-        						<canvas id="html" height="130" width="130"></canvas>
-        						<p>HTML/CSS</p>
-        						<br>
-        						<script>
-        						var doughnutData = [{value: 70,color:"#42DCA3"},{value : 30,color : "#ecf0f1"}];
-        						var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
-        						</script>
-        					</div>
-        					<div class="col-lg-4 mx-auto">
         						<canvas id="git" height="130" width="130"></canvas>
         						<p>Expo iOS/Android Dev</p>
         						<br>
         						<script>
-        						var doughnutData = [{value: 70,color:"#42DCA3"},{value : 30,color : "#ecf0f1"}];
+        						var doughnutData = [{value: 50,color:"#42DCA3"},{value : 50,color : "#ecf0f1"}];
         						var myDoughnut = new Chart(document.getElementById("git").getContext("2d")).Doughnut(doughnutData);
         						</script>
         					</div>
+
+                  <div class="col-lg-4 mx-auto">
+        						<canvas id="ml" height="130" width="130"></canvas>
+        						<p>Keras/sklearn</p>
+        						<br>
+        						<script>
+        						var doughnutData = [{value: 50,color:"#42DCA3"},{value : 50,color : "#ecf0f1"}];
+        						var myDoughnut = new Chart(document.getElementById("ml").getContext("2d")).Doughnut(doughnutData);
+        						</script>
+        					</div>
+
         					<div class="col-lg-4 mx-auto">
         						<canvas id="nix" height="130" width="130"></canvas>
         						<p>Terminal/*nix</p>
@@ -150,8 +156,6 @@
         			<br>
         		</div><!--/.container -->
         	</div><!--/ #skillswrap -->
-          <br/></br>
-          <a href="https://docs.google.com/document/d/1Iex2hbvHi0y09V48SQS-lnPoJd2pYSUeXQh5FOy49Fw/edit?usp=sharing" class="btn btn-default btn-lg">View Single Page Resume</a>
       </div>
     </section>
 
@@ -160,7 +164,7 @@
       <div class="container">
         <div class="wrap">
           <h4>Projects</h4>
-          <div class="row">
+          <div class="row" style="padding-bottom: 80px;">
             <div class="col-lg-6 mx-auto">
               <h5>Cryptus</h5>
               <p>A peer-to-peer marketplace for Bitcoin and Ethereum.</p>
@@ -173,6 +177,21 @@
               <p>An iOS app to retrieve info about one's Bitcoin address.</p>
               <p>Built using Expo React-Native.</p>
               <a href="https://github.com/avneesh1mehta/blockaddr" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> Repo</a>
+            </div>
+          </div>
+          <!-- <div class="row"></div> -->
+          <div class="row text-center">
+            <div class="col-lg-6 mx-auto">
+              <h5>Crypto Price Predictor</h5>
+              <p>Time-series regressions object for predicting cryptocurrency prices.</p>
+              <p>Built using FB Prophet and Pandas.</p>
+              <a href="https://github.com/avneesh1mehta/Cryptocurrency-Price-Predictor" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> Repo</a>
+            </div>
+            <div class="col-lg-6 mx-auto">
+              <h5>Exclusife Classifier</h5>
+              <p>Classification of <a href="https://exclusife.com/">Exclusife</a> clients who will renew their subscription and identification of least amount of work needed to get non-renewing clients to renew.</p>
+              <p>Using Keras, sklearn, Pandas, and more.</p>
+              <p>Work in progress...</p>
             </div>
           </div>
         </div>
